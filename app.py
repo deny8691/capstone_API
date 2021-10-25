@@ -84,6 +84,8 @@ def route_stations_traffic_id(station_id):
     return stationtraffic
 
 ##POST Endpoints --> Menginfokan traffic stations pada periode tertentu
+#Input Data Example
+#{ "period" : "2015-08", "station_id" : 1001}
 @app.route('/stations/periodictraffic/') 
 def route_station_periodictraffic():
     input_data = request.get_json()
